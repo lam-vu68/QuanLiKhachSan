@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deluxe Ocean View - The Serene Horizon Hotel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="main-navbar scrolled">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">Serene Horizon</a>
+        <ul class="navbar-links">
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="phong-nghi.html">Phòng Nghỉ</a></li>
+          <li><a href="dich-vu.html">Dịch Vụ</a></li>
+          <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+        </ul>
+        <div class="navbar-right">
+          <div class="navbar-actions">
+            <a href="thanh-toan.html" class="cta-button">Đặt Phòng Ngay</a>
+          </div>
+          <button class="navbar-toggler" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu-content">
+        <button class="close-menu" aria-label="Close menu">&times;</button>
+        <ul>
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="phong-nghi.html">Phòng Nghỉ</a></li>
+          <li><a href="dich-vu.html">Dịch Vụ</a></li>
+          <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+        </ul>
+        <a href="#" class="cta-button mobile-cta-button">Đặt Phòng Ngay</a>
+      </div>
+    </div>
+
+    <main class="main-content-area">
+      <section class="room-gallery-section">
+        <div class="container">
+          <div class="room-gallery">
+            <div class="gallery-main">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1740&q=80"
+                alt="Main view of Deluxe Ocean View room"
+                id="main-image"
+              />
+            </div>
+            <div class="gallery-thumbnails">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=300&q=80"
+                alt="Thumbnail 1"
+                class="thumbnail active"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=300&q=80"
+                alt="Thumbnail 2"
+                class="thumbnail"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=300&q=80"
+                alt="Thumbnail 3"
+                class="thumbnail"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1598605272254-16f0c0ecdfa5?auto=format&fit=crop&w=300&q=80"
+                alt="Thumbnail 4"
+                class="thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="room-details-section">
+        <div class="container room-details-layout">
+          <div class="room-info">
+            <div class="room-title">
+              <h1>Deluxe Ocean View</h1>
+              <span class="tag">View Biển</span>
+            </div>
+            <p class="room-description">
+              Tận hưởng không gian nghỉ dưỡng tuyệt vời rộng 35m² với ban công
+              riêng nhìn thẳng ra đại dương xanh biếc. Căn phòng được trang bị
+              nội thất sang trọng, giường cỡ King êm ái và phòng tắm lát đá cẩm
+              thạch với bồn tắm riêng. Đây là sự lựa chọn hoàn hảo cho các cặp
+              đôi hoặc những ai tìm kiếm sự thư thái và lãng mạn.
+            </p>
+
+            <h3 class="details-subtitle">Tiện nghi nổi bật</h3>
+            <ul class="amenities-list">
+              <li><i class="fas fa-wifi"></i> Wifi tốc độ cao</li>
+              <li><i class="fas fa-tv"></i> TV 55-inch Smart TV</li>
+              <li><i class="fas fa-snowflake"></i> Điều hòa trung tâm</li>
+              <li><i class="fas fa-bath"></i> Bồn tắm & vòi sen</li>
+              <li><i class="fas fa-mug-saucer"></i> Quầy bar mini</li>
+              <li><i class="fas fa-lock"></i> Két an toàn</li>
+              <li><i class="fas fa-wind"></i> Ban công riêng</li>
+              <li><i class="fas fa-coffee"></i> Dụng cụ pha trà/cafe</li>
+            </ul>
+          </div>
+
+          <aside class="booking-widget">
+            <div class="widget-content">
+              <p class="price">$150 <span>/ đêm</span></p>
+              <form>
+                <div class="form-group">
+                  <label for="checkin-widget">Nhận phòng</label>
+                  <input type="date" id="checkin-widget" />
+                </div>
+                <div class="form-group">
+                  <label for="checkout-widget">Trả phòng</label>
+                  <input type="date" id="checkout-widget" />
+                </div>
+                <div class="form-group">
+                  <label for="guests-widget">Số khách</label>
+                  <select id="guests-widget">
+                    <option>1 người</option>
+                    <option selected>2 người</option>
+                    <option>3 người</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn-primary full-width">
+                  Đặt Ngay
+                </button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="rooms-section">
+        <div class="container">
+          <h2 class="section-heading text-center">
+            Khám Phá Các Loại Phòng Khác
+          </h2>
+          <div class="rooms-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer"></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh Toán - The Serene Horizon Hotel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="checkout-page-body">
+    <header class="checkout-header">
+      <div class="container">
+        <a href="index.html" class="navbar-logo">Serene Horizon</a>
+      </div>
+    </header>
+
+    <main class="main-content-area">
+      <div class="container checkout-layout">
+        <div class="checkout-form-area">
+          <div class="checkout-steps">
+            <div class="step active">1. Thông tin khách hàng</div>
+            <div class="step">2. Thanh toán</div>
+            <div class="step">3. Xác nhận</div>
+          </div>
+
+          <form class="checkout-form">
+            <h2 class="form-section-title">Thông Tin Liên Hệ</h2>
+            <div class="form-row">
+              <div class="form-group half-width">
+                <label for="first-name">Họ</label>
+                <input type="text" id="first-name" placeholder="Nguyễn Văn" />
+              </div>
+              <div class="form-group half-width">
+                <label for="last-name">Tên</label>
+                <input type="text" id="last-name" placeholder="A" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="email@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Số điện thoại</label>
+              <input type="tel" id="phone" placeholder="0901234567" />
+            </div>
+
+            <h2 class="form-section-title">Phương Thức Thanh Toán</h2>
+            <div class="payment-methods">
+              <div class="payment-option active">
+                <input type="radio" id="credit-card" name="payment" checked />
+                <label for="credit-card">
+                  <span>Thẻ Tín Dụng / Ghi Nợ</span>
+                  <div class="card-logos">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                  </div>
+                </label>
+              </div>
+              <div class="payment-option">
+                <input type="radio" id="bank-transfer" name="payment" />
+                <label for="bank-transfer">Chuyển khoản ngân hàng</label>
+              </div>
+            </div>
+
+            <div class="card-details">
+              <div class="form-group">
+                <label for="card-number">Số thẻ</label>
+                <input
+                  type="text"
+                  id="card-number"
+                  placeholder="1234 5678 9101 1121"
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group half-width">
+                  <label for="expiry-date">Ngày hết hạn</label>
+                  <input type="text" id="expiry-date" placeholder="MM / YY" />
+                </div>
+                <div class="form-group half-width">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" placeholder="123" />
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary full-width">
+              Hoàn Tất Thanh Toán
+            </button>
+          </form>
+        </div>
+
+        <aside class="order-summary">
+          <h4>Tóm Tắt Đơn Hàng</h4>
+          <div class="summary-room-details">
+            <img
+              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=300&q=80"
+              alt="Deluxe Ocean View"
+            />
+            <div class="room-info-summary">
+              <h5>Deluxe Ocean View</h5>
+              <p>2 khách</p>
+            </div>
+          </div>
+          <div class="summary-line">
+            <span>Nhận phòng:</span>
+            <span>10/09/2025</span>
+          </div>
+          <div class="summary-line">
+            <span>Trả phòng:</span>
+            <span>12/09/2025</span>
+          </div>
+          <hr />
+          <div class="summary-line">
+            <span>Giá 2 đêm (2 x $150):</span>
+            <span>$300.00</span>
+          </div>
+          <div class="summary-line">
+            <span>Thuế & Phí:</span>
+            <span>$30.00</span>
+          </div>
+          <hr />
+          <div class="summary-line total">
+            <span>Tổng Cộng:</span>
+            <span>$330.00</span>
+          </div>
+
+          <div class="trust-badges">
+            <i class="fas fa-shield-alt"></i>
+            <span>Giao dịch an toàn và bảo mật</span>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="checkout-footer">
+      <div class="container">
+        <p>
+          &copy; 2025 The Serene Horizon. All Rights Reserved. |
+          <a href="#">Chính sách bảo mật</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
