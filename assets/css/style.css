@@ -327,8 +327,13 @@ body.no-scroll {
 /* ======== SECTION 1: HERO & BOOKING FORM ======== */
 .hero-section {
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1740&q=80")
-    no-repeat center center/cover;
+  /* Tách các thuộc tính background ra */
+  background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1740&q=80");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; /* Đặt ở đây */
+
   position: relative;
   display: flex;
   flex-direction: column;
