@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Serene Horizon Hotel - Trang Chủ</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,8 +58,8 @@
 
     <header class="hero-section">
       <div class="hero-content">
-        <h1>Nơi Sự An Yên Chạm Đến Chân Trời</h1>
-        <p>
+        <h1 data-aos="fade-left">Nơi Sự An Yên Chạm Đến Chân Trời</h1>
+        <p data-aos="fade-right">
           Trải nghiệm sự sang trọng tinh tế và dịch vụ đẳng cấp tại The Serene
           Horizon.
         </p>
@@ -88,7 +89,7 @@
 
     <main>
       <section class="intro-section">
-        <div class="container intro-layout">
+        <div data-aos="fade-down-right" class="container intro-layout">
           <div class="intro-images">
             <img
               src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
@@ -115,7 +116,7 @@
       </section>
 
       <section class="rooms-section">
-        <div class="container">
+        <div data-aos="fade-down-left" class="container">
           <h2 class="section-heading text-center">Các Loại Phòng Nổi Bật</h2>
           <div class="rooms-grid">
             <div class="room-card">
@@ -177,7 +178,7 @@
       </section>
 
       <section class="services-section">
-        <div class="container">
+        <div data-aos="zoom-out-up" class="container">
           <h2 class="section-heading text-center">Dịch Vụ & Tiện Ích</h2>
           <div class="services-grid">
             <a href="#" class="service-item">
@@ -287,7 +288,15 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
+  <script>
+    AOS.init({
+      duration: 800, // Thời gian animation
+      once: true, // Chỉ animate một lần
+      offset: 50, // Animate khi cách màn hình 50px
+    });
+  </script>
 </html>

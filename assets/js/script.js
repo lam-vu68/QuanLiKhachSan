@@ -74,5 +74,4 @@ $(".gallery-thumbnails .thumbnail").click(function () {
   // ... code cũ của bạn (navbar, mobile menu, active link) ...
 
   // 5. Khởi tạo thư viện Animate On Scroll (AOS)
-
 });
