@@ -1,3 +1,9 @@
+AOS.init({
+  duration: 800, // Thời gian animation
+  once: true, // Chỉ animate một lần
+  offset: 50, // Animate khi cách màn hình 50px
+});
+
 $(document).ready(function () {
   // 1. Xử lý hiệu ứng Navbar khi cuộn trang
   $(window).scroll(function () {

@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -59,8 +60,8 @@
       ></div>
 
       <div class="container">
-        <h1>Dịch Vụ Đẳng Cấp</h1>
-        <p>
+        <h1 data-aos="fade-down-right">Dịch Vụ Đẳng Cấp</h1>
+        <p data-aos="fade-down-left">
           Tận hưởng những trải nghiệm đỉnh cao được thiết kế dành riêng cho bạn
         </p>
       </div>
@@ -68,7 +69,7 @@
 
     <main class="main-content-area">
       <section class="service-detail-section">
-        <div class="container service-item-detailed">
+        <div data-aos="zoom-in-down" class="container service-item-detailed">
           <div class="service-image-wrapper">
             <img
               src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=870&q=80"
@@ -97,7 +98,10 @@
       </section>
 
       <section class="service-detail-section alt-bg">
-        <div class="container service-item-detailed reverse">
+        <div
+          data-aos="zoom-out-up"
+          class="container service-item-detailed reverse"
+        >
           <div class="service-image-wrapper">
             <img
               src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=870&q=80"
@@ -193,6 +197,8 @@
         <p>&copy; 2025 The Serene Horizon. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
