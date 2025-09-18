@@ -1848,3 +1848,204 @@ body.no-scroll {
     left: 0;
   }
 }
+/* ===== BIẾN MÀU VÀ FONT CHUNG ===== */
+:root {
+  --primary-color: #008080; /* Teal */
+  --accent-color: #cc5500; /* Burnt Orange */
+  --text-color: #222222;
+  --background-color: #ffffff;
+  --navbar-height: 80px;
+}
+
+body {
+  font-family: sans-serif; /* Thay bằng font bạn muốn */
+  margin-top: var(--navbar-height); /* Tạo khoảng trống cho navbar fixed */
+}
+
+/* ===== MAIN NAVBAR STYLING (DESKTOP) ===== */
+.main-navbar {
+  background-color: var(--background-color);
+  height: var(--navbar-height);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--primary-color);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cta-button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a54400;
+}
+
+/* Nút hamburger toggler (ban đầu ẩn trên desktop) */
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: var(--text-color);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ===== MOBILE MENU STYLING ===== */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ mờ */
+  z-index: 1001;
+
+  /* Mặc định ẩn đi */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-menu-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  background-color: var(--background-color);
+  padding: 60px 20px 20px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+
+  /* Mặc định trượt ra ngoài màn hình */
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style khi menu được kích hoạt (active) */
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-overlay.active .mobile-menu-content {
+  transform: translateX(0);
+}
+
+.close-menu {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu-content ul li {
+  margin-bottom: 25px;
+}
+
+.mobile-menu-content ul a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mobile-cta-button {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+}
+
+/* ===== PHẦN RESPONSIVE ===== */
+@media (max-width: 768px) {
+  /* Ẩn menu desktop và nút CTA desktop */
+  .navbar-links,
+  .navbar-actions {
+    display: none;
+  }
+  /* Hiện nút hamburger */
+  .navbar-toggler {
+    display: block;
+  }
+
+  /* Animation cho nút hamburger -> X */
+  .navbar-toggler.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar-toggler.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar-toggler.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
